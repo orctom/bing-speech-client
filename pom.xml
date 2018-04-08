@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.orctom</groupId>
+    <artifactId>basepom</artifactId>
+    <version>1.4</version>
+  </parent>
+  <artifactId>bing-speech-client</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <description>WebSocket client for Bing Speech APIa</description>
+  <url>https://github.com/orctom/bing-speech-client/</url>
+
+  <issueManagement>
+    <url>https://github.com/orctom/bing-speech-client/issues</url>
+    <system>GitHub</system>
+  </issueManagement>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/orctom/bing-speech-client/</url>
+    <connection>scm:git:git@github.com:orctom/bing-speech-client.git</connection>
+    <developerConnection>scm:git:git@github.com:orctom/bing-speech-client.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.glassfish.tyrus</groupId>
+      <artifactId>tyrus-client</artifactId>
+      <version>1.13.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.tyrus</groupId>
+      <artifactId>tyrus-container-grizzly-client</artifactId>
+      <version>1.13.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.47</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>24.1-jre</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.orctom</groupId>
+      <artifactId>speex4j</artifactId>
+      <version>1.0.3</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
